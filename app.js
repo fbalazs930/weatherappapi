@@ -10,8 +10,7 @@ function search(){
         cName.innerHTML = data['name'];
         temp.innerHTML = Math.round((data['main']['temp']-273)) + "°C";
         input.value ="";    
-    })    
-    .catch(err => alert("Rossz városnév!"));    
+    })
 }
 
 button.addEventListener('click', search);
